@@ -1,0 +1,220 @@
+body {
+    height: 1100px;
+    background-color: rgb(208, 208, 208);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 60%;
+    height: 180px;
+    background-color: #405D72;
+    position: relative;
+    z-index: 1;
+}
+
+.ner {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 350px;
+    top: 35px;
+}
+
+.merner {
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+    position: relative;
+    left: 600px;
+    top: -15px;
+}
+
+.container {
+    width: 60%;
+    height: 950px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+.profile {
+    width: 30%;
+    padding-top: 30%;
+    background-color: #758694;
+    border-radius: 50%;
+    position: absolute;
+    top: -16%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.profile img{
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 10%;
+    left: 20px;
+}
+
+nav {
+    width: 30%;
+    height: 100%;
+    background-color: #758694;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 120px;
+    margin-left: 75px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    position: relative;
+    top: 100px;
+}
+
+.material-icons {
+    color: white;
+    font-size: 10px;
+    position: relative;
+    margin-left: 10px;
+    top: 15px;
+}
+
+.nav_text {
+    color: white;
+    font-size: 14px;
+}
+
+section {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sec-item{
+    display: flex;
+    align-items: left;
+    gap: 10px;
+}
+.sec-item img{
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    width: 35px;
+    height: 35px;
+}
+.sec-text{
+    color: black;
+    font-size: 18px;
+}
+.surguul{
+    display: flex;
+    flex-direction: column;
+}
+.sec-item1{
+    display: flex;
+    align-items: left;
+}
+.sec-item1 img{
+    color: black;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 35px;
+    height: 40px;
+}
+.sec-text1{
+    color: black;
+    font-size: 15px;
+}
+.sec-text2{
+    color: black;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: -7px;
+}
+.sec-item2{
+    display: flex;
+    align-items: left;
+}
+.sec-item2 img{
+    color: black;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 35px;
+    height: 135px;
+}
+.sec-item2 p{
+    padding: 5px;
+}
+.star{
+    display: flex;
+    flex-direction: column;
+}
+.star1{
+    display: flex;
+    flex-direction: row;
+}
+.star1 .material-icons{
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.star2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.star2 .material-icons{
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.sec-text4{
+    color: black;
+    font-size: 17px;
+    margin-left: 40px;
+}
+.sec-item3{
+    display: flex;
+    align-items: left;
+}
+.sec-item3 img{
+    color: black;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+}
+.sec-text3{
+    color: black;
+    font-size: 15px;
+    margin-left: 15px;
+}

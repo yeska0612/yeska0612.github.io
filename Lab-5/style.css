@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
 body {
     align-items: center;
     background-color: beige;
@@ -223,7 +229,7 @@ body {
     color: white;
     font-size: 9px;
     position: relative;
-    margin-top: -20 px;
+    margin-top: -19.5px;
     margin-left: 155px;
     font-family: 'Lato', sans-serif;
     border-radius: 45%;
@@ -276,10 +282,14 @@ body {
     background-color: #1B1B6C;
     color: white;
     border: 1px solid #9090A5;
-    border-style: inset;
+    border-style: solid;
     width: 90%;
     height: 20px;
     position: relative;
+    border-bottom-width: 3px;
+    border-top-width: 1.5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
     margin-left: 10px;
     margin-top: 10px;
     outline: none;

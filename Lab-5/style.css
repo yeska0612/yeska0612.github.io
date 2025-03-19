@@ -36,28 +36,35 @@ body {
 
 @media only screen and (max-width: 480px) {
     .container {
-        margin: 0px auto;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .col-4,
+    .col-8,
+    .col-12 {
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
         width: 100%;
     }
 
     .col-4 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 35%; 
     }
 
     .col-8 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 65%; 
     }
 
     .col-12 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 100%;
     }
 }
+
 
 .logo {
     background-color: #1B1B6C;
@@ -294,6 +301,7 @@ body {
     border-style: none;
     background-color: #F61067;
 }
+
 
 .husnegt3 {
     background-color: #352BA5;

@@ -3,7 +3,8 @@
     src: url('fonts/Lato-Regular.ttf') format('truetype');
     font-style: normal;
 }
-body{
+
+body {
     align-items: center;
     background-color: beige;
     font-family: 'Lato', sans-serif;
@@ -11,29 +12,60 @@ body{
     height: 100%;
     background-color: rgb(14, 14, 14);
 }
+
 .container {
     margin: 0px auto;
     width: 810px;
     height: 738px;
 }
+
 .col-4 {
     float: left;
     width: calc(100% / 3);
 }
+
 .col-8 {
     float: left;
     width: calc((100% / 3)* 2);
 }
+
 .col-12 {
     float: left;
     width: calc(100% / 1);
 }
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .col-4 {
+        float: left;
+        clear: left;
+        width: calc(100% / 1);
+    }
+
+    .col-8 {
+        float: left;
+        clear: left;
+        width: calc(100% / 1);
+    }
+
+    .col-12 {
+        float: left;
+        clear: left;
+        width: calc(100% / 1);
+    }
+}
+
 .logo {
     background-color: #1B1B6C;
     height: 5%;
     align-items: start;
 }
-.logo img{
+
+.logo img {
     width: 70px;
     color: white;
     height: auto;
@@ -41,27 +73,31 @@ body{
     margin-top: 12px;
     margin-left: 10px;
 }
+
 .top-navigation {
     background-color: #13124F;
     height: 25%;
     align-items: start;
     color: white;
 }
-.top-navigation h1{
+
+.top-navigation h1 {
     font-size: 40px;
     font-weight: 400;
     position: relative;
     margin-left: 18px;
     margin-top: 45px;
 }
-.top-navigation p{
+
+.top-navigation p {
     font-weight: 100;
     font-size: 12px;
     position: relative;
-    margin-left:18px;
+    margin-left: 18px;
     margin-top: -25px;
 }
-.top-navigation button{
+
+.top-navigation button {
     font-weight: 100;
     font-size: 8px;
     position: relative;
@@ -73,12 +109,14 @@ body{
     margin-left: 18px;
     margin-top: 5px;
 }
+
 .content {
     background-color: white;
     height: 65%;
     gap: 10px;
 }
-.content h2{
+
+.content h2 {
     color: black;
     font-size: 24px;
     font-weight: 100;
@@ -87,27 +125,31 @@ body{
     margin-top: 30px;
     font-family: monospace;
 }
+
 .content hr {
-    border-bottom: 5px grey #ddd; 
+    border-bottom: 5px grey #ddd;
     border-style: groove;
     position: relative;
     margin-left: 18px;
     margin-top: -5px;
 }
-.content p{
+
+.content p {
     font-size: 10px;
     font-weight: 100;
     position: relative;
     margin-left: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.content img{
+
+.content img {
     width: 95%;
     height: auto;
     position: relative;
     margin-left: 18px;
     margin-top: 10px;
 }
+
 .anh {
     background-color: #9090A5;
     width: 95%;
@@ -118,7 +160,8 @@ body{
     margin-left: 18px;
     margin-top: 6px;
 }
-.anh img{
+
+.anh img {
     width: 25px;
     height: 25px;
     position: relative;
@@ -126,7 +169,8 @@ body{
     margin-top: 3px;
     margin-bottom: 3px;
 }
-.anh p{
+
+.anh p {
     color: white;
     font-size: 10px;
     position: relative;
@@ -134,11 +178,13 @@ body{
     margin-top: 12px;
     font-family: 'Lato', sans-serif;
 }
+
 .sidebar {
     background-color: white;
     height: 65%;
 }
-.sidebar button{
+
+.sidebar button {
     position: relative;
     width: 93%;
     height: 25px;
@@ -147,7 +193,8 @@ body{
     margin-left: 8px;
     background-color: #F61067;
 }
-.sidebar button img{
+
+.sidebar button img {
     width: 12px;
     height: auto;
     color: white;
@@ -155,7 +202,8 @@ body{
     margin-top: 6px;
     margin-left: -60px;
 }
-.sidebar button p{
+
+.sidebar button p {
     color: white;
     font-size: 9px;
     position: relative;
@@ -163,7 +211,8 @@ body{
     margin-left: 15px;
     font-family: 'Lato', sans-serif;
 }
-.sidebar button .p2{
+
+.sidebar button .p2 {
     color: white;
     font-size: 9px;
     position: relative;
@@ -175,7 +224,8 @@ body{
     height: 12px;
     background-color: #352BA5;
 }
-.husnegt1{
+
+.husnegt1 {
     background-color: #9090A5;
     position: relative;
     width: 93%;
@@ -185,7 +235,8 @@ body{
     margin-top: -3px;
     margin-left: 8px;
 }
-.sidebar .husnegt1 p{
+
+.sidebar .husnegt1 p {
     color: white;
     font-size: 12px;
     position: relative;
@@ -193,7 +244,8 @@ body{
     top: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.husnegt2{
+
+.husnegt2 {
     background-color: #13124F;
     position: relative;
     width: 93%;
@@ -203,7 +255,8 @@ body{
     margin-top: -12px;
     margin-left: 8px;
 }
-.sidebar .husnegt2 p{
+
+.sidebar .husnegt2 p {
     color: white;
     font-size: 9.5px;
     position: relative;
@@ -211,10 +264,11 @@ body{
     top: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .custom-input {
     background-color: #1B1B6C;
-    color: white; 
-    border: 1px solid #9090A5; 
+    color: white;
+    border: 1px solid #9090A5;
     border-style: inset;
     width: 90%;
     height: 20px;
@@ -229,7 +283,7 @@ body{
     font-size: 9.5px;
 }
 
-.husnegt2 .btn{
+.husnegt2 .btn {
     width: 93%;
     height: 24px;
     position: relative;
@@ -238,7 +292,8 @@ body{
     border-style: none;
     background-color: #F61067;
 }
-.husnegt2 .btn p{
+
+.husnegt2 .btn p {
     color: white;
     font-size: 9px;
     position: relative;
@@ -246,7 +301,8 @@ body{
     margin-left: 10px;
     font-family: 'Lato', sans-serif;
 }
-.husnegt3{
+
+.husnegt3 {
     background-color: #352BA5;
     position: relative;
     width: 93%;
@@ -256,7 +312,8 @@ body{
     margin-top: -12px;
     margin-left: 8px;
 }
-.husnegt3 p{
+
+.husnegt3 p {
     color: white;
     font-size: 8px;
     position: relative;
@@ -264,6 +321,7 @@ body{
     margin-left: 35px;
     text-decoration: underline;
 }
+
 .husnegt4 {
     background-color: white;
     border-color: #d6d6d6;
@@ -276,16 +334,18 @@ body{
     margin-top: 10px;
     margin-left: 8px;
 }
-.husnegt4 p{
+
+.husnegt4 p {
     color: black;
     font-size: 9px;
     position: relative;
     margin-left: 10px;
     margin-top: 10px;
 }
+
 .progress-bar {
     width: 90%;
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to right, #F61067 70%, #2AD392 30%);
     margin-left: 12px;
 }
@@ -318,11 +378,12 @@ body{
     background-color: #13124F;
     height: 5%;
 }
-.footer p{
+
+.footer p {
     color: white;
     position: relative;
-    margin-left: 20px;
     font-size: 10px;
     font-weight: 100;
-    margin-top: 15px;
+    padding: 5px;
+    padding-left: 22px;
 }

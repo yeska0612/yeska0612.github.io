@@ -36,28 +36,35 @@ body {
 
 @media only screen and (max-width: 480px) {
     .container {
-        margin: 0px auto;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .col-4,
+    .col-8,
+    .col-12 {
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
         width: 100%;
     }
 
     .col-4 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 35%; 
     }
 
     .col-8 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 65%; 
     }
 
     .col-12 {
-        float: left;
-        clear: left;
-        width: calc(100% / 1);
+        width: 100%;
     }
 }
+
 
 .logo {
     background-color: #1B1B6C;
@@ -286,6 +293,8 @@ body {
 .husnegt2 .btn {
     width: 93%;
     height: 24px;
+    color: white;
+    text-align: center;
     position: relative;
     margin-left: 10px;
     margin-top: 10px;
@@ -293,14 +302,6 @@ body {
     background-color: #F61067;
 }
 
-.husnegt2 .btn p {
-    color: white;
-    font-size: 9px;
-    position: relative;
-    margin-top: -15px;
-    margin-left: 10px;
-    font-family: 'Lato', sans-serif;
-}
 
 .husnegt3 {
     background-color: #352BA5;

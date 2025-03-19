@@ -40,8 +40,14 @@ body {
         width: 100%;
     }
 
-    .col-4,
-    .col-8,
+    .col-4 {
+        display: block;
+        width: 100%;
+    }
+    .col-8 {
+        display: block;
+        width: 100%;
+    }
     .col-12 {
         display: block;
         width: 100%;

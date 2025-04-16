@@ -1,580 +1,848 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
-  <meta name="keywords" content="business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
-  <meta name="author" content="elemis">
-  <title>Demo Test - Modern & Multipurpose Bootstrap 5 Template</title>
-  <link rel="shortcut icon" href="./assets/img/favicon.png">
-  <!-- Student CSS files -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap 5 business template for responsive, SEO-friendly, and modern websites — ideal for startups, agencies, and professionals." />
+  <meta name="keywords" content="bootstrap 5 template, responsive website, business website, modern design, startup landing page, creative agency, SEO friendly HTML template" />
+  <meta name="author" content="elemis" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Demo Test | Multipurpose Bootstrap 5 Business Template" />
+  <meta property="og:description" content="Launch your business site with a professional Bootstrap 5 HTML template." />
+  <meta property="og:image" content="https://yourdomain.com/assets/img/preview.png" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Demo Test | Multipurpose Bootstrap 5 Business Template" />
+  <meta name="twitter:description" content="Create a fast, clean, responsive Bootstrap 5 site easily." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/img/preview.png" />
+
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <title>Demo Test | Multipurpose Bootstrap 5 Business Template</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ 
 </head>
 
-<body>
-  <div class="content-wrapper">
-    <header class="wrapper bg-gray">
-      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
-        <div class="container">
-          <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
-            <div class="navbar-brand w-100">
-              <a href="./index.html">
-                <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
-              </a>
-            </div>
-            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-              <div class="offcanvas-header d-lg-none">
-                <h3 class="text-white fs-30 mb-0">Demo Test</h3>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+  <body>
+    <div class="content-wrapper">
+      <header class="wrapper bg-gray">
+        <nav
+          class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none"
+          aria-label="Main navigation"
+        >
+          <div class="container">
+            <div
+              class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center"
+            >
+              <!-- Logo -->
+              <div class="navbar-brand w-100">
+                <a href="./index.html" title="Go to homepage">
+                  <img
+                    src="./assets/img/logo-dark.png"
+                    srcset="./assets/img/logo-dark@2x.png 2x"
+                    alt="Demo Test - Business Website Logo"
+                  />
+                </a>
               </div>
-              <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
+      
+              <!-- Navigation links -->
+              <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                <div class="offcanvas-header d-lg-none">
+                  <h3 class="text-white fs-30 mb-0">Demo Test</h3>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+      
+                <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown dropdown-mega">
+                      <a class="nav-link dropdown-toggle" href="/demos.html" title="View available demos">Demos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="/pages.html" title="Explore various pages">Pages</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="/projects.html" title="See our recent projects">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="/blog.html" title="Read our latest blog posts">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega">
+                      <a class="nav-link dropdown-toggle" href="/blocks.html" title="UI blocks and components">Blocks</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega">
+                      <a class="nav-link dropdown-toggle" href="/documentation.html" title="Browse product documentation">Documentation</a>
+                    </li>
+                  </ul>
+      
+                  <!-- Mobile footer -->
+                  <div class="offcanvas-footer d-lg-none">
+                    <div>
+                      <a href="mailto:info@email.com" class="link-inverse">info@email.com</a><br />
+                      <a href="tel:+1234567890">00 (123) 456 78 90</a><br />
+                      <nav class="nav social social-white mt-4">
+                        <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="uil uil-dribbble"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="uil uil-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="uil uil-youtube"></i></a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Top-right social links and toggle -->
+              <div class="navbar-other w-100 d-flex ms-auto">
+                <ul class="navbar-nav flex-row align-items-center ms-auto">
+                  <li class="nav-item">
+                    <nav class="nav social social-muted justify-content-end text-end">
+                      <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+                      <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+                      <a href="#" aria-label="Dribbble"><i class="uil uil-dribbble"></i></a>
+                      <a href="#" aria-label="Instagram"><i class="uil uil-instagram"></i></a>
+                    </nav>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
-                  </li>
-                  <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blocks</a>
-                  </li>
-                  <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documentation</a>
+                  <li class="nav-item d-lg-none">
+                    <button class="hamburger offcanvas-nav-btn" aria-label="Toggle navigation menu">
+                      <span></span>
+                    </button>
                   </li>
                 </ul>
-                <!-- /.navbar-nav -->
-                <div class="offcanvas-footer d-lg-none">
-                  <div>
-                    <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
-                    <br /> 00 (123) 456 78 90 <br />
-                    <nav class="nav social social-white mt-4">
-                      <a href="#"><i class="uil uil-twitter"></i></a>
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
-                      <a href="#"><i class="uil uil-instagram"></i></a>
-                      <a href="#"><i class="uil uil-youtube"></i></a>
-                    </nav>
-                    <!-- /.social -->
-                  </div>
-                </div>
-                <!-- /.offcanvas-footer -->
               </div>
-              <!-- /.offcanvas-body -->
             </div>
-            <!-- /.navbar-collapse -->
-            <div class="navbar-other w-100 d-flex ms-auto">
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <li class="nav-item">
-                  <nav class="nav social social-muted justify-content-end text-end">
-                    <a href="#"><i class="uil uil-twitter"></i></a>
-                    <a href="#"><i class="uil uil-facebook-f"></i></a>
-                    <a href="#"><i class="uil uil-dribbble"></i></a>
-                    <a href="#"><i class="uil uil-instagram"></i></a>
-                  </nav>
-                  <!-- /.social -->
-                </li>
-                <li class="nav-item d-lg-none">
-                  <button class="hamburger offcanvas-nav-btn"><span></span></button>
-                </li>
-              </ul>
-              <!-- /.navbar-nav -->
-            </div>
-            <!-- /.navbar-other -->
           </div>
-          <!-- /.navbar-collapse-wrapper -->
+        </nav>
+      </header>
+      
+      <!-- /header -->
+      <section class="wrapper bg-gray" aria-label="Hero section with company introduction">
+        <div class="container pt-12 pt-md-16 text-center">
+          <div class="row">
+            <div
+              class="col-lg-8 col-xxl-7 mx-auto text-center"
+              data-cues="slideInDown"
+              data-group="page-title"
+              data-delay="600"
+            >
+              <!-- Subheadline -->
+              <h2 class="fs-16 text-uppercase ls-xl text-dark mb-4">
+                Welcome to Demo Test Solutions
+              </h2>
+      
+              <!-- Main headline -->
+              <h1 class="display-1 fs-58 mb-7">
+                Fast & Reliable Business Solutions for Startups and Agencies
+              </h1>
+      
+              <!-- CTA buttons -->
+              <div
+                class="d-flex justify-content-center mb-5 mb-md-0"
+                data-cues="slideInDown"
+                data-group="page-title-buttons"
+                data-delay="900"
+              >
+                <span>
+                  <a href="/services.html" class="btn btn-lg btn-primary rounded-pill me-2" title="Explore our services">Explore Now</a>
+                </span>
+                <span>
+                  <a href="/contact.html" class="btn btn-lg btn-outline-primary rounded-pill" title="Get in touch with us">Contact Us</a>
+                </span>
+              </div>
+            </div>
+            <!-- /column -->
+          </div>
+          <!-- /.row -->
         </div>
         <!-- /.container -->
-      </nav>
-      <!-- /.navbar -->
-    </header>
-    <!-- /header -->
-    <section class="wrapper bg-gray">
-      <div class="container pt-12 pt-md-16 text-center">
-        <div class="row">
-          <div class="col-lg-8 col-xxl-7 mx-auto text-center" data-cues="slideInDown" data-group="page-title" data-delay="600">
-            <h2 class="fs-16 text-uppercase ls-xl text-dark mb-4">Hello! This is demo test</h2>
-            <h1 class="display-1 fs-58 mb-7">We bring rapid solutions for your business.</h1>
-            <div class="d-flex justify-content-center mb-5 mb-md-0" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-              <span><a href="#" class="btn btn-lg btn-primary rounded-pill me-2">Explore Now</a></span>
-              <span><a href="#" class="btn btn-lg btn-outline-primary rounded-pill">Contact Us</a></span>
-            </div>
-          </div>
-          <!--/column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-      <figure class="position-absoute" style="bottom: 0; left: 0; z-index: 2;"><img src="./assets/img/photos/bg11.jpg" alt="" /></figure>
-    </section>
-    <!-- /section -->
-    <section class="wrapper bg-gray">
-      <div class="container">
-        <div class="card shadow-none my-n13 my-md-n15 my-lg-n17">
-          <div class="card-body py-12 py-lg-14 px-lg-11 py-xl-16 px-xl-13">
-            <div class="row text-center">
-              <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
-                <h3 class="display-4 mb-9">The service we offer is specifically designed to meet your needs.</h3>
+      
+        <!-- Background image -->
+        <figure class="position-absolute" style="bottom: 0; left: 0; z-index: 2">
+          <img src="./assets/img/photos/bg11.jpg" alt="Business meeting background image" />
+        </figure>
+      </section>
+      
+      <!-- /section -->
+      <section class="wrapper bg-gray">
+        <div class="container">
+          <div class="card shadow-none my-n13 my-md-n15 my-lg-n17">
+            <div class="card-body py-12 py-lg-14 px-lg-11 py-xl-16 px-xl-13">
+              <div class="row text-center" aria-label="Introduction to services section">
+                <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                  <!-- Sub-heading -->
+                  <h2 class="fs-15 text-uppercase text-muted mb-3">
+                    What We Do?
+                  </h2>
+              
+                  <!-- Main heading -->
+                  <h3 class="display-4 mb-9">
+                    The service we offer is specifically designed to meet your
+                    needs.
+                  </h3>
+                </div>
+                <!-- /column -->
               </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="row gx-md-8 gx-xl-12 gy-8 mb-14 mb-md-16 text-center">
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5"> <i class="uil uil-phone-volume"></i> </div>
-                <h4>24/7 Support</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-purple">Learn More</a>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-green pe-none mb-5"> <i class="uil uil-shield-exclamation"></i> </div>
-                <h4>Secure Payments</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-green">Learn More</a>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-orange pe-none mb-5"> <i class="uil uil-laptop-cloud"></i> </div>
-                <h4>Daily Updates</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-orange">Learn More</a>
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-            <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
-              <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Our Strategy</h2>
-                <h3 class="display-4 mb-5">3 working steps to organize our business projects.</h3>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod eget. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus.</p>
-                <p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum consectetur.</p>
-                <a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
-              </div>
-              <!--/column -->
-              <div class="col-lg-6">
-                <div class="d-flex flex-row">
-                  <div>
-                    <span class="icon btn btn-block btn-lg btn-soft-purple pe-none mt-1 me-5"><span class="number fs-22">01</span></span>
+              
+              <!-- /.row -->
+              <section class="services-section" aria-label="Key services we offer to customers">
+                <div class="row gx-md-8 gx-xl-12 gy-8 mb-14 mb-md-16 text-center">
+                  
+                  <!-- 1. Support -->
+                  <div class="col-md-4" aria-label="24/7 Customer Support Service">
+                    <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5" aria-hidden="true">
+                      <i class="uil uil-phone-volume"></i>
+                    </div>
+                    <h4>24/7 Customer Support</h4>
+                    <p class="mb-3">
+                      Our dedicated support team is always available to help you resolve issues and answer your questions, ensuring seamless service round the clock.
+                    </p>
+                    <a href="/support.html" class="more hover link-purple" title="Learn more about 24/7 customer support">Learn More</a>
                   </div>
-                  <div>
-                    <h4 class="mb-1">Collect Ideas</h4>
-                    <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus. Fusce dapibus, tellus ac cursus commodo.</p>
+              
+                  <!-- 2. Secure Payments -->
+                  <div class="col-md-4" aria-label="Secure Payment System">
+                    <div class="icon btn btn-block btn-lg btn-soft-green pe-none mb-5" aria-hidden="true">
+                      <i class="uil uil-shield-exclamation"></i>
+                    </div>
+                    <h4>Secure Online Payments</h4>
+                    <p class="mb-3">
+                      Your transactions are protected by the latest encryption technologies, ensuring maximum security for your online payments.
+                    </p>
+                    <a href="/payments.html" class="more hover link-green" title="Learn more about secure payments">Learn More</a>
+                  </div>
+              
+                  <!-- 3. Daily Updates -->
+                  <div class="col-md-4" aria-label="Daily System Updates">
+                    <div class="icon btn btn-block btn-lg btn-soft-orange pe-none mb-5" aria-hidden="true">
+                      <i class="uil uil-laptop-cloud"></i>
+                    </div>
+                    <h4>Automated Daily Updates</h4>
+                    <p class="mb-3">
+                      We provide daily updates with the latest features, enhancements, and security patches to keep your system running smoothly and securely.
+                    </p>
+                    <a href="/updates.html" class="more hover link-orange" title="Learn more about daily updates">Learn More</a>
+                  </div>
+              
+                </div>
+              </section>
+              
+              <section class="strategy-section" aria-label="Our 3-step business project strategy">
+                <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
+                  
+                  <!-- LEFT TEXT COLUMN -->
+                  <div class="col-lg-6">
+                    <h2 class="fs-15 text-uppercase text-muted mb-3">
+                      Our Strategy
+                    </h2>
+                    <h3 class="display-4 mb-5">
+                      3 Effective Steps to Organize and Execute Your Business Projects
+                    </h3>
+                    <p>
+                      Our proven workflow strategy helps transform ideas into successful outcomes. From planning to execution, we ensure every step adds value and efficiency.
+                    </p>
+                    <p class="mb-6">
+                      Each phase is tailored to meet your business needs with careful analysis, clear communication, and strategic implementation.
+                    </p>
+                    <a href="/strategy.html" class="btn btn-primary rounded-pill mb-0" title="Learn more about our strategy">
+                      Learn More
+                    </a>
+                  </div>
+              
+                  <!-- RIGHT STEPS COLUMN -->
+                  <div class="col-lg-6">
+                    <!-- Step 1 -->
+                    <div class="d-flex flex-row" aria-label="Step 1: Collect Ideas">
+                      <div>
+                        <span class="icon btn btn-block btn-lg btn-soft-purple pe-none mt-1 me-5" aria-hidden="true">
+                          <span class="number fs-22">01</span>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="mb-1">Collect Ideas</h4>
+                        <p class="mb-0">
+                          We begin by gathering insights and brainstorming creative solutions to address your core business goals and pain points.
+                        </p>
+                      </div>
+                    </div>
+              
+                    <!-- Step 2 -->
+                    <div class="d-flex flex-row mt-8 ms-lg-10" aria-label="Step 2: Data Analysis">
+                      <div>
+                        <span class="icon btn btn-block btn-lg btn-soft-green pe-none mt-1 me-5" aria-hidden="true">
+                          <span class="number fs-22">02</span>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="mb-1">Data Analysis</h4>
+                        <p class="mb-0">
+                          Our team evaluates all collected data to uncover trends, risks, and opportunities that inform decision-making.
+                        </p>
+                      </div>
+                    </div>
+              
+                    <!-- Step 3 -->
+                    <div class="d-flex flex-row mt-8" aria-label="Step 3: Finalize Product">
+                      <div>
+                        <span class="icon btn btn-block btn-lg btn-soft-orange pe-none mt-1 me-5" aria-hidden="true">
+                          <span class="number fs-22">03</span>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="mb-1">Finalize Product</h4>
+                        <p class="mb-0">
+                          We deliver the final solution — refined, tested, and ready to bring measurable results to your business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              
+                </div>
+              </section>
+              
+              <section class="company-stats-testimonials" aria-label="Company achievements and client testimonials">
+
+                <!-- Company Facts -->
+                <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11 align-items-end">
+                  <div class="col-lg-4">
+                    <h2 class="fs-15 text-uppercase text-muted mb-3">
+                      Company Facts
+                    </h2>
+                    <h3 class="display-4 mb-0">We Are Proud of Our Achievements</h3>
+                  </div>
+              
+                  <!-- Statistics -->
+                  <div class="col-lg-8 mt-lg-2">
+                    <div class="row align-items-center counter-wrapper gy-6 text-center" role="list">
+                      <div class="col-md-4" role="listitem" aria-label="Over 1000 completed projects">
+                        <h3 class="counter counter-lg" aria-hidden="true">1000+</h3>
+                        <p>Completed Projects</p>
+                      </div>
+                      <div class="col-md-4" role="listitem" aria-label="Over 500 happy clients">
+                        <h3 class="counter counter-lg" aria-hidden="true">500+</h3>
+                        <p>Happy Clients</p>
+                      </div>
+                      <div class="col-md-4" role="listitem" aria-label="Over 150 awards won">
+                        <h3 class="counter counter-lg" aria-hidden="true">150+</h3>
+                        <p>Awards Won</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex flex-row mt-8 ms-lg-10">
-                  <div>
-                    <span class="icon btn btn-block btn-lg btn-soft-green pe-none mt-1 me-5"><span class="number fs-22">02</span></span>
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Data Analysis</h4>
-                    <p class="mb-0">Vivamus sagittis lacus vel augue laoreet tortor mauris condimentum fermentum.</p>
+              
+                <!-- Testimonials -->
+                <div class="card bg-gray shadow-lg mb-14 mb-md-17" aria-label="Client testimonials carousel">
+                  <div class="row gx-0">
+                    <div
+                      class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start"
+                      style="background-image: url('./assets/img/photos/tm1.jpg');"
+                      role="img"
+                      aria-label="Happy client giving testimonial"
+                    ></div>
+              
+                    <div class="col-lg-6">
+                      <div class="p-10 p-xl-13">
+                        <div class="swiper-container dots-closer mb-6" data-margin="30" data-dots="true">
+                          <div class="swiper" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+                            <div class="swiper-wrapper">
+              
+                              <!-- Testimonial 1 -->
+                              <div class="swiper-slide" role="group" aria-label="Testimonial from Coriss Ambady">
+                                <blockquote class="icon icon-top fs-lg text-center">
+                                  <p>
+                                    “The team delivered beyond expectations. Highly professional, responsive, and trustworthy.”
+                                  </p>
+                                  <div class="blockquote-details justify-content-center text-center">
+                                    <div class="info ps-0">
+                                      <h5 class="mb-1">Coriss Ambady</h5>
+                                      <p class="mb-0">Financial Analyst</p>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+              
+                              <!-- Testimonial 2 -->
+                              <div class="swiper-slide" role="group" aria-label="Testimonial from Cory Zamora">
+                                <blockquote class="icon icon-top fs-lg text-center">
+                                  <p>
+                                    “Excellent service with timely delivery. I would recommend them to any business looking to scale.”
+                                  </p>
+                                  <div class="blockquote-details justify-content-center text-center">
+                                    <div class="info ps-0">
+                                      <h5 class="mb-1">Cory Zamora</h5>
+                                      <p class="mb-0">Marketing Specialist</p>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+              
+                              <!-- Testimonial 3 -->
+                              <div class="swiper-slide" role="group" aria-label="Testimonial from Nikolas Brooten">
+                                <blockquote class="icon icon-top fs-lg text-center">
+                                  <p>
+                                    “A reliable team that delivers quality solutions. Their workflow and communication impressed me.”
+                                  </p>
+                                  <div class="blockquote-details justify-content-center text-center">
+                                    <div class="info ps-0">
+                                      <h5 class="mb-1">Nikolas Brooten</h5>
+                                      <p class="mb-0">Sales Manager</p>
+                                    </div>
+                                  </div>
+                                </blockquote>
+                              </div>
+              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
                   </div>
                 </div>
-                <div class="d-flex flex-row mt-8">
-                  <div>
-                    <span class="icon btn btn-block btn-lg btn-soft-orange pe-none mt-1 me-5"><span class="number fs-22">03</span></span>
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Finalize Product</h4>
-                    <p class="mb-0">Cras mattis consectetur purus sit amet massa justo sit amet risus consectetur magna elit.</p>
+              </section>
+              
+              <section class="case-studies-section" aria-label="Our creative project case studies and blog posts">
+                <div class="row text-center">
+                  <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
+                    <h2 class="fs-15 text-uppercase text-muted mb-3">
+                      Case Studies
+                    </h2>
+                    <h3 class="display-4 mb-9">
+                      Discover some of our most creative and impactful projects.
+                    </h3>
                   </div>
                 </div>
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-            <hr class="my-14 my-md-16" />
-            <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11 align-items-end">
-              <div class="col-lg-4">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Company Facts</h2>
-                <h3 class="display-4 mb-0">We are proud of our works</h3>
-              </div>
-              <!-- /column -->
-              <div class="col-lg-8 mt-lg-2">
-                <div class="row align-items-center counter-wrapper gy-6 text-center">
-                  <div class="col-md-4">
-                    <h3 class="counter counter-lg">1000+</h3>
-                    <p>Completed Projects</p>
+              
+                <div
+                  class="swiper-container blog grid-view mb-18"
+                  data-margin="30"
+                  data-dots="true"
+                  data-items-xl="3"
+                  data-items-md="2"
+                  data-items-xs="1"
+                >
+                  <div class="swiper" role="region" aria-label="Project case studies carousel">
+                    <div class="swiper-wrapper">
+              
+                      <!-- Slide 1 -->
+                      <div class="swiper-slide">
+                        <article itemscope itemtype="https://schema.org/BlogPosting">
+                          <figure class="overlay overlay-1 hover-scale rounded mb-6">
+                            <a href="./blog-post.html" title="View full case study: Ligula tristique">
+                              <img src="./assets/img/photos/b4.jpg" alt="Creative office workspace project" itemprop="image" />
+                            </a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <h2 class="post-title h3 mb-3" itemprop="headline">
+                              <a class="link-dark" href="./blog-post.html" title="Ligula tristique case study">Ligula tristique quis risus</a>
+                            </h2>
+                          </div>
+                          <div class="post-footer">
+                            <ul class="post-meta">
+                              <li class="post-date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <time datetime="2022-04-14" itemprop="datePublished">14 Apr 2022</time>
+                              </li>
+                              <li class="post-comments">
+                                <a href="#"><i class="uil uil-file-alt fs-15"></i> Coding</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+              
+                      <!-- Slide 2 -->
+                      <div class="swiper-slide">
+                        <article itemscope itemtype="https://schema.org/BlogPosting">
+                          <figure class="overlay overlay-1 hover-scale rounded mb-6">
+                            <a href="./blog-post.html" title="View full case study: Nullam id dolor">
+                              <img src="./assets/img/photos/b5.jpg" alt="Workspace redesign project" itemprop="image" />
+                            </a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <h2 class="post-title h3 mb-3" itemprop="headline">
+                              <a class="link-dark" href="./blog-post.html" title="Nullam id dolor case study">Nullam id dolor elit id nibh</a>
+                            </h2>
+                          </div>
+                          <div class="post-footer">
+                            <ul class="post-meta">
+                              <li class="post-date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <time datetime="2022-03-29" itemprop="datePublished">29 Mar 2022</time>
+                              </li>
+                              <li class="post-comments">
+                                <a href="#"><i class="uil uil-file-alt fs-15"></i> Workspace</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+              
+                      <!-- Slide 3 -->
+                      <div class="swiper-slide">
+                        <article itemscope itemtype="https://schema.org/BlogPosting">
+                          <figure class="overlay overlay-1 hover-scale rounded mb-6">
+                            <a href="./blog-post.html" title="View full case study: Ultricies fusce">
+                              <img src="./assets/img/photos/b6.jpg" alt="Business collaboration session" itemprop="image" />
+                            </a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <h2 class="post-title h3 mb-3" itemprop="headline">
+                              <a class="link-dark" href="./blog-post.html" title="Ultricies fusce case study">Ultricies fusce porta elit</a>
+                            </h2>
+                          </div>
+                          <div class="post-footer">
+                            <ul class="post-meta">
+                              <li class="post-date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <time datetime="2022-02-26" itemprop="datePublished">26 Feb 2022</time>
+                              </li>
+                              <li class="post-comments">
+                                <a href="#"><i class="uil uil-file-alt fs-15"></i> Meeting</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+              
+                      <!-- Slide 4 -->
+                      <div class="swiper-slide">
+                        <article itemscope itemtype="https://schema.org/BlogPosting">
+                          <figure class="overlay overlay-1 hover-scale rounded mb-6">
+                            <a href="./blog-post.html" title="View full case study: Morbi leo risus">
+                              <img src="./assets/img/photos/b7.jpg" alt="Business strategy session" itemprop="image" />
+                            </a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <h2 class="post-title h3 mb-3" itemprop="headline">
+                              <a class="link-dark" href="./blog-post.html" title="Morbi leo risus case study">Morbi leo risus porta eget</a>
+                            </h2>
+                          </div>
+                          <div class="post-footer">
+                            <ul class="post-meta">
+                              <li class="post-date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <time datetime="2022-01-07" itemprop="datePublished">7 Jan 2022</time>
+                              </li>
+                              <li class="post-comments">
+                                <a href="#"><i class="uil uil-file-alt fs-15"></i> Business Tips</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+              
+                    </div>
                   </div>
-                  <!--/column -->
-                  <div class="col-md-4">
-                    <h3 class="counter counter-lg">500+</h3>
-                    <p>Happy Clients</p>
-                  </div>
-                  <!--/column -->
-                  <div class="col-md-4">
-                    <h3 class="counter counter-lg">150+</h3>
-                    <p>Awards Won</p>
-                  </div>
-                  <!--/column -->
                 </div>
-                <!--/.row -->
-              </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="card bg-gray shadow-lg mb-14 mb-md-17">
-              <div class="row gx-0">
-                <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start" data-image-src="./assets/img/photos/tm1.jpg">
+              </section>
+              
+              <section class="our-team-section" aria-label="Meet our professional and experienced team">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+              
+                  <!-- TEXT SECTION -->
+                  <div class="col-lg-6">
+                    <h2 class="fs-15 text-uppercase text-muted mb-3">Our Team</h2>
+                    <h3 class="display-4 mb-5">
+                      Save Time and Get Results with Our Professional Experts
+                    </h3>
+                    <p class="mb-6">
+                      Our team is made up of skilled professionals with years of experience in design, development, and marketing. We work collaboratively to deliver efficient, innovative, and impactful solutions for your business.
+                    </p>
+              
+                    <div class="row gy-3 gx-xl-8">
+                      <div class="col-xl-6">
+                        <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                          <li>
+                            <span><i class="uil uil-check" aria-hidden="true"></i></span>
+                            <span>Customized strategies tailored to your business goals</span>
+                          </li>
+                          <li class="mt-3">
+                            <span><i class="uil uil-check" aria-hidden="true"></i></span>
+                            <span>Fast and reliable support from certified experts</span>
+                          </li>
+                        </ul>
+                      </div>
+              
+                      <div class="col-xl-6">
+                        <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                          <li>
+                            <span><i class="uil uil-check" aria-hidden="true"></i></span>
+                            <span>Proven results across multiple industries</span>
+                          </li>
+                          <li class="mt-3">
+                            <span><i class="uil uil-check" aria-hidden="true"></i></span>
+                            <span>Agile process that adapts to your business needs</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- IMAGE SECTION -->
+                  <div class="col-md-8 col-lg-6 order-lg-2">
+                    <figure class="rounded">
+                      <img
+                        src="./assets/img/photos/about24.jpg"
+                        srcset="./assets/img/photos/about24@2x.jpg 2x"
+                        alt="Our professional and creative team working together"
+                      />
+                    </figure>
+                  </div>
+              
+                </div>
+              </section>
+              
+              <div
+                class="row gy-10 gx-lg-8 gx-xl-12 mb-14 mb-md-16 align-items-center"
+              >
+                <div class="col-md-8 col-lg-6">
+                  <figure class="rounded">
+                    <img
+                      src="./assets/img/photos/about25.jpg"
+                      srcset="./assets/img/photos/about25@2x.jpg 2x"
+                      alt="alt nemsen shuu
+                    "
+                    />
+                  </figure>
                 </div>
                 <!--/column -->
-                <div class="col-lg-6">
-                  <div class="p-10 p-xl-13">
-                    <div class="swiper-container dots-closer mb-6" data-margin="30" data-dots="true">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <blockquote class="icon icon-top fs-lg text-center">
-                              <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper."</p>
-                              <div class="blockquote-details justify-content-center text-center">
-                                <div class="info ps-0">
-                                  <h5 class="mb-1">Coriss Ambady</h5>
-                                  <p class="mb-0">Financial Analyst</p>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <!--/.swiper-slide -->
-                          <div class="swiper-slide">
-                            <blockquote class="icon icon-top fs-lg text-center">
-                              <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper."</p>
-                              <div class="blockquote-details justify-content-center text-center">
-                                <div class="info ps-0">
-                                  <h5 class="mb-1">Cory Zamora</h5>
-                                  <p class="mb-0">Marketing Specialist</p>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <!--/.swiper-slide -->
-                          <div class="swiper-slide">
-                            <blockquote class="icon icon-top fs-lg text-center">
-                              <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper."</p>
-                              <div class="blockquote-details justify-content-center text-center">
-                                <div class="info ps-0">
-                                  <h5 class="mb-1">Nikolas Brooten</h5>
-                                  <p class="mb-0">Sales Manager</p>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <!--/.swiper-slide -->
+                <section class="col-lg-6" aria-labelledby="why-choose-us">
+                  <header>
+                    <h2 id="why-choose-us" class="fs-15 text-uppercase text-muted mb-3">
+                      Why Choose Us?
+                    </h2>
+                    <h3 class="display-4 mb-7">
+                      A few reasons why our valued customers choose us
+                    </h3>
+                  </header>
+                
+                  <div class="accordion accordion-wrapper" id="accordionExample">
+                    <article class="card plain accordion-item">
+                      <h4 class="card-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Professional Design
+                        </button>
+                      </h4>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Our team offers clean, responsive, and modern web design tailored to your business needs, helping improve user experience and boost conversions.
+                          </p>
                         </div>
-                        <!--/.swiper-wrapper -->
                       </div>
-                      <!-- /.swiper -->
-                    </div>
-                    <!-- /.swiper-container -->
+                    </article>
+                
+                    <article class="card plain accordion-item">
+                      <h4 class="card-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Top-Notch Support
+                        </button>
+                      </h4>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Our dedicated support team ensures quick response times and efficient solutions, ensuring your business runs smoothly around the clock.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                
+                    <article class="card plain accordion-item">
+                      <h4 class="card-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Header and Slider Options
+                        </button>
+                      </h4>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Customize your website with a variety of header styles and slider integrations to capture attention and improve engagement from your visitors.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
                   </div>
-                  <!--/div -->
-                </div>
+                </section>
+                
                 <!--/column -->
               </div>
               <!--/.row -->
-            </div>
-            <!-- /.card -->
-            <div class="row text-center">
-              <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Case Studies</h2>
-                <h3 class="display-4 mb-9">Check out some of our awesome projects with creative ideas and great design.</h3>
-              </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="swiper-container blog grid-view mb-18" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article>
-                      <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img src="./assets/img/photos/b4.jpg" alt="" /></a>
-                        <figcaption>
-                          <h5 class="from-top mb-0">Read More</h5>
-                        </figcaption>
-                      </figure>
-                      <div class="post-header">
-                        <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Ligula tristique quis risus</a></h2>
-                      </div>
-                      <!-- /.post-header -->
-                      <div class="post-footer">
-                        <ul class="post-meta">
-                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Apr 2022</span></li>
-                          <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-15"></i>Coding</a></li>
-                        </ul>
-                        <!-- /.post-meta -->
-                      </div>
-                      <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
+              <div
+                class="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map"
+                data-image-src="./assets/img/map.png" alt="alt nemsen"
+              >
+                <div class="container py-md-16 py-lg-18">
+                  <div class="row">
+                    <div class="col-xl-11 col-xxl-9 mx-auto">
+                      <h3 class="display-4 mb-8 px-lg-8">
+                        We are trusted by over 5000+ clients. Join them now and
+                        grow your business.
+                      </h3>
+                    </div>
+                    <!-- /column -->
                   </div>
-                  <!--/.swiper-slide -->
-                  <div class="swiper-slide">
-                    <article>
-                      <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img src="./assets/img/photos/b5.jpg" alt="" /></a>
-                        <figcaption>
-                          <h5 class="from-top mb-0">Read More</h5>
-                        </figcaption>
-                      </figure>
-                      <div class="post-header">
-                        <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Nullam id dolor elit id nibh</a></h2>
-                      </div>
-                      <!-- /.post-header -->
-                      <div class="post-footer">
-                        <ul class="post-meta">
-                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mar 2022</span></li>
-                          <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-15"></i>Workspace</a></li>
-                        </ul>
-                        <!-- /.post-meta -->
-                      </div>
-                      <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
+                  <!-- /.row -->
+                  <div class="d-flex justify-content-center">
+                    <span
+                      ><a class="btn btn-primary rounded-pill"
+                        >Get Started</a
+                      ></span
+                    >
                   </div>
-                  <!--/.swiper-slide -->
-                  <div class="swiper-slide">
-                    <article>
-                      <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img src="./assets/img/photos/b6.jpg" alt="" /></a>
-                        <figcaption>
-                          <h5 class="from-top mb-0">Read More</h5>
-                        </figcaption>
-                      </figure>
-                      <div class="post-header">
-                        <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Ultricies fusce porta elit</a></h2>
-                      </div>
-                      <!-- /.post-header -->
-                      <div class="post-footer">
-                        <ul class="post-meta">
-                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Feb 2022</span></li>
-                          <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-15"></i>Meeting</a></li>
-                        </ul>
-                        <!-- /.post-meta -->
-                      </div>
-                      <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                  </div>
-                  <!--/.swiper-slide -->
-                  <div class="swiper-slide">
-                    <article>
-                      <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img src="./assets/img/photos/b7.jpg" alt="" /></a>
-                        <figcaption>
-                          <h5 class="from-top mb-0">Read More</h5>
-                        </figcaption>
-                      </figure>
-                      <div class="post-header">
-                        <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Morbi leo risus porta eget</a></h2>
-                      </div>
-                      <div class="post-footer">
-                        <ul class="post-meta">
-                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Jan 2022</span></li>
-                          <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-15"></i>Business Tips</a></li>
-                        </ul>
-                        <!-- /.post-meta -->
-                      </div>
-                      <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                  </div>
-                  <!--/.swiper-slide -->
                 </div>
-                <!--/.swiper-wrapper -->
+                <!-- /.container -->
               </div>
-              <!-- /.swiper -->
+              <!-- /.wrapper -->
             </div>
-            <!-- /.swiper-container -->
-            <hr class="my-14 my-md-16" />
-            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
-              <div class="col-md-8 col-lg-6 order-lg-2">
-                <figure class="rounded"><img src="./assets/img/photos/about24.jpg" srcset="./assets/img/photos/about24@2x.jpg 2x" alt=""></figure>
-              </div>
-              <!--/column -->
-              <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Our Team</h2>
-                <h3 class="display-4 mb-5">Save your time by choosing our professional team.</h3>
-                <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                <div class="row gy-3 gx-xl-8">
-                  <div class="col-xl-6">
-                    <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                      <li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam ornare curabitur blandit tempus.</span></li>
-                      <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis ornare donec elit.</span></li>
-                    </ul>
-                  </div>
-                  <!--/column -->
-                  <div class="col-xl-6">
-                    <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                      <li><span><i class="uil uil-check"></i></span><span>Etiam porta sem malesuada magna mollis euismod.</span></li>
-                      <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fermentum massa vivamus faucibus amet euismod.</span></li>
-                    </ul>
-                  </div>
-                  <!--/column -->
-                </div>
-                <!--/.row -->
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-            <div class="row gy-10 gx-lg-8 gx-xl-12 mb-14 mb-md-16 align-items-center">
-              <div class="col-md-8 col-lg-6">
-                <figure class="rounded"><img src="./assets/img/photos/about25.jpg" srcset="./assets/img/photos/about25@2x.jpg 2x" alt=""></figure>
-              </div>
-              <!--/column -->
-              <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Why Choose Us?</h2>
-                <h3 class="display-4 mb-7">A few reasons why our valued customers choose us.</h3>
-                <div class="accordion accordion-wrapper" id="accordionExample">
-                  <div class="card plain accordion-item">
-                    <div class="card-header" id="headingOne">
-                      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Professional Design </button>
-                    </div>
-                    <!--/.card-header -->
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                      </div>
-                      <!--/.card-body -->
-                    </div>
-                    <!--/.accordion-collapse -->
-                  </div>
-                  <!--/.accordion-item -->
-                  <div class="card plain accordion-item">
-                    <div class="card-header" id="headingTwo">
-                      <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Top-Notch Support </button>
-                    </div>
-                    <!--/.card-header -->
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                      </div>
-                      <!--/.card-body -->
-                    </div>
-                    <!--/.accordion-collapse -->
-                  </div>
-                  <!--/.accordion-item -->
-                  <div class="card plain accordion-item">
-                    <div class="card-header" id="headingThree">
-                      <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Header and Slider Options </button>
-                    </div>
-                    <!--/.card-header -->
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                      </div>
-                      <!--/.card-body -->
-                    </div>
-                    <!--/.accordion-collapse -->
-                  </div>
-                  <!--/.accordion-item -->
-                </div>
-                <!--/.accordion -->
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-            <div class="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" data-image-src="./assets/img/map.png">
-              <div class="container py-md-16 py-lg-18">
-                <div class="row">
-                  <div class="col-xl-11 col-xxl-9 mx-auto">
-                    <h3 class="display-4 mb-8 px-lg-8">We are trusted by over 5000+ clients. Join them now and grow your business.</h3>
-                  </div>
-                  <!-- /column -->
-                </div>
-                <!-- /.row -->
-                <div class="d-flex justify-content-center">
-                  <span><a class="btn btn-primary rounded-pill">Get Started</a></span>
-                </div>
-              </div>
-              <!-- /.container -->
-            </div>
-            <!-- /.wrapper -->
+            <!--/.card-body -->
           </div>
-          <!--/.card-body -->
+          <!--/.card -->
         </div>
-        <!--/.card -->
+        <!-- /.container -->
+      </section>
+      <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="bg-dark text-inverse">
+      <div class="container pt-20 pt-lg-21 pb-7">
+        <div class="row gy-6 gy-lg-0">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3 class="h2 mb-3 text-white">Join the Community</h3>
+              <p class="lead mb-5">
+                Let's make something great together. We are trusted by over
+                5000+ clients. Join them by using our services and grow your
+                business.
+              </p>
+              <a href="#" class="btn btn-white rounded-pill">Join Us</a>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-4 col-lg-2 offset-lg-2">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Need Help?</h4>
+              <ul class="list-unstyled text-reset mb-0">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-4 col-lg-2">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Learn More</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-4 col-lg-2">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+              <address>
+                Moonshine St. 14/05 Light City, London, United Kingdom
+              </address>
+              <a href="mailto:first.last@email.com">info@email.com</a><br />
+              00 (123) 456 78 90
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!--/.row -->
+        <hr class="mt-13 mt-md-15 mb-7" />
+        <div class="d-md-flex align-items-center justify-content-between">
+          <p class="mb-2 mb-lg-0">© 2025 Demo Test. All rights reserved.</p>
+          <nav class="nav social social-white text-md-end">
+            <a href="#"><i class="uil uil-twitter"></i></a>
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href="#"><i class="uil uil-dribbble"></i></a>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-youtube"></i></a>
+          </nav>
+          <!-- /.social -->
+        </div>
+        <!-- /div -->
       </div>
       <!-- /.container -->
-    </section>
-    <!-- /section -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="bg-dark text-inverse">
-    <div class="container pt-20 pt-lg-21 pb-7">
-      <div class="row gy-6 gy-lg-0">
-        <div class="col-lg-4">
-          <div class="widget">
-            <h3 class="h2 mb-3 text-white">Join the Community</h3>
-            <p class="lead mb-5">Let's make something great together. We are trusted by over 5000+ clients. Join them by using our services and grow your business.</p>
-            <a href="#" class="btn btn-white  rounded-pill">Join Us</a>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-2 offset-lg-2">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Need Help?</h4>
-            <ul class="list-unstyled text-reset mb-0">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Get Started</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-2">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Learn More</h4>
-            <ul class="list-unstyled  mb-0">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Features</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-2">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-            <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-      </div>
-      <!--/.row -->
-      <hr class="mt-13 mt-md-15 mb-7" />
-      <div class="d-md-flex align-items-center justify-content-between">
-        <p class="mb-2 mb-lg-0">© 2025 Demo Test. All rights reserved.</p>
-        <nav class="nav social social-white text-md-end">
-          <a href="#"><i class="uil uil-twitter"></i></a>
-          <a href="#"><i class="uil uil-facebook-f"></i></a>
-          <a href="#"><i class="uil uil-dribbble"></i></a>
-          <a href="#"><i class="uil uil-instagram"></i></a>
-          <a href="#"><i class="uil uil-youtube"></i></a>
-        </nav>
-        <!-- /.social -->
-      </div>
-      <!-- /div -->
+    </footer>
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
     </div>
-    <!-- /.container -->
-  </footer>
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-  </div>
-</body>
-
+  </body>
 </html>

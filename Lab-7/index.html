@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        body {
+            background-color: #ffe4cd ;
+            display: flex;
+            float: left;
+            flex-direction: column;
+            justify-items: center;
+        }
+        h1{
+            margin-left: 70px;
+        }
+        .btn{
+            display: flex;
+            column-gap: 10px;
+            width: 800px;
+        }
+        button{
+            gap: 30px;
+            padding: 20px;
+            border-radius: 20%;
+            border-width: 1px;
+            background-color: #9bddff;
+            font-size: 15px;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+        .morning {
+            background-color: green;
+            top: 10px;
+            left: 10px;
+        }
+        .evening {
+            background-color: red;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+    <h1>Laboratory 8</h1>
+
+    <div class="btn"><br>
+        <button onclick="dasgal1()">Dasgal 1</button>
+        <button onclick="dasgal2()">Dasgal 2</button>
+        <button onclick="dasgal3()">Dasgal 3</button>
+        <button onclick="dasgal4()">Dasgal 4</button>
+        <button onclick="dasgal5()">Dasgal 5</button>
+        <button onclick="dasgal6()">Dasgal 6</button>
+        <button onclick="dasgal7()">Dasgal 7</button>
+    </div>
+
+    <script>
+
+        function isPalindrom(str) {
+            str = str.toLowerCase().replace(/\s+/g, '');
+            return str === str.split('').reverse().join('');
+        }
+        function dasgal1(){
+            let name = window.prompt("Neree oruul: ");
+            if(isPalindrom(name)){
+                alert(name+" palindrom mun.");
+            }
+            else{
+                alert(name+" palindrom bish.");
+            }
+        }
+        
+
+        function dasgal2() {
+            var number = window.prompt("Natural too oruul: ", "0");
+            var d = number;
+            var sum = 0;
+            while (number > 0) {
+                sum += number % 10;
+                number = Math.floor(number / 10);
+            }
+            alert(d + " toonii tsifruudiin niilber " + sum + " baina.");
+        }
+
+        function dasgal3() {
+            let input = window.prompt("Natural too oruul: ", "0");
+            let number = parseInt(input);
+
+            if (number < 2) {
+                alert("2-oos ih too oruul.");
+                return;
+            }
+
+            let remaining = number;
+            let result = "";
+            let first = true;
+
+            for (let i = 2; i <= number; i++) {
+                while (remaining - i >= 0) {
+                    if (!first) {
+                        result += " + ";
+                    }
+                    result += i;
+                    remaining -= i;
+                    first = false;
+                    if (remaining === 3) {
+                        break;
+                    }
+                }
+            }
+            alert(number + " = " + result);
+        }
+        function dasgal4() {
+            let input = window.prompt("Natural too oruul: ", "0");
+            let number = parseFloat(input);
+        
+            var t = number / 7;
+            var hours = Math.floor(t);
+            var totalMinutes = (t - hours) * 60;
+            var minutes = Math.floor(totalMinutes);
+            var seconds = Math.round((totalMinutes - minutes) * 60);
+        
+            alert("Chono tuulaig "+hours+ "tsag " + minutes + "minut " + seconds + "secundiin daraa guisene.");
+        }         
+        function dasgal5() {
+            var array = [];
+            for (let i = 0; i < 5; i++) {
+                let number = parseInt(window.prompt(i + 1 + " = "));
+                array.push(number);
+            }
+
+            function teso(n) {
+                if (n % 2 == 0)
+                    return 1;
+                else
+                    return 0;
+            }
+            var tegsh = "";
+            var sondgoi = "";
+
+            for (let i = 0; i < 5; i++) {
+                if (teso(array[i]) == 1) {
+                    tegsh += array[i];
+                    tegsh += ",";
+                }
+                else {
+                    sondgoi += array[i];
+                    sondgoi += ",";
+                }
+            }
+            alert("Tegsh: " + tegsh + " Sondgoi: " + sondgoi);
+        }
+        function dasgal6() {
+            var number = parseInt(window.prompt("Enter the number: ", "0"));
+            if (number < 37) {
+                var davhar = Math.floor(number / 4) + 1;
+                var door = number % 4;
+                alert("entrance:1 floor:" + davhar + " door:" + door);
+            }
+            else if (36 < number && number < 73) {
+                var davhar = Math.floor(number / 4) + 1;
+                var door = number % 4;
+                alert("entrance:1 floor:" + davhar + " door:" + door);
+            }
+            else if (72 < number && number < 109) {
+                var davhar = Math.floor(number / 4) + 1;
+                var door = number % 4;
+                alert("entrance:1 floor:" + davhar + " door:" + door);
+            }
+            else {
+                aler(number + " ene baishingiin ail bish baina.");
+            }
+        }
+
+        function dasgal7() {
+            const hour = new Date().getHours();
+            const square = document.createElement('div');
+            square.classList.add('square');
+
+            if (hour >= 6 && hour < 18) {
+                square.classList.add('morning');
+            } else if (hour >= 18 && hour <= 23) {
+                square.classList.add('evening');
+            }
+
+            document.body.appendChild(square);
+        }
+
+        dasgal7();
+
+        function problem1() {
+            var name = window.prompt("Enter the name:", "0");
+            var sum = 0;
+            while (number > 0) {
+                sum += number % 10;
+                number = Math.floor(number / 10);
+            }
+            var temp = sum;
+            var reverse = 0;
+            while (temp > 0) {
+                reverse *= 10;
+                reverse += temp % 10;
+                temp = Math.floor(temp / 10);
+            }
+            if (reverse == sum) {
+                alert("Sum of digits is palindrome");
+            }
+            else {
+                alert("Sum of digits is not palindrome");
+            }
+        }
+        function problem2() {
+            var distance = window.prompt("Enter the number: ", "0");
+            var hour = Math.floor(distance / 7);
+            var minute = Math.floor(((distance % 7) / 7) * 60);
+            var second = Math.ceil((distance - hour * 7 - minute / 60 * 7) * 1000 / (7000 / 3600));
+            alert(hour + " hour(s) and " + minute + " minute(s) and " + second + " second(s)");
+
+        }
+        function problem4() {
+            var array = [];
+            for (let i = 0; i < 5; i++) {
+                let number = window.prompt(i + 1 + " = ");
+                array.push(number);
+            }
+
+            var result = array[0];
+            for (var i = 1; i < 5; i++) {
+                result = lcd(result, array[i]);
+            }
+            alert(result);
+
+        }
+        function lcd(a, b) {
+            var min;
+            var gcd = 1;
+            if (a < b) { min = a; } else { min = b; }
+            for (var i = min; i >= 1; i--) {
+                if (a % i == 0 && b % i == 0) {
+                    gcd = i; break;
+                }
+            }
+            var lcd = a / gcd * b;
+            return lcd;
+        }
+        function problem5() {
+            var number = window.prompt("Enter your number: ");
+            let now = new Date();
+            let hours = now.getHours();
+            if (hours > 12) {
+                alert(Math.sqrt(number));
+            }
+            else {
+                alert(number * number);
+            }
+        }
+    </script>
+</body>
+
+</html>

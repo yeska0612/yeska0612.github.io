@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="basi">
+            <header>
+                <h1>Currency </h1>
+                <h1>converter</h1>
+            </header>
+            <div class="turtburish"></div>
+        </div>
+
+        <input id="amount" type="text" readonly>
+
+        <div class="keypad">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="back()">Back</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearInput()">C</button>
+        </div>
+
+        <div class="money">
+            <select id="fromCurrency"></select>
+            <p>to</p>
+            <select id="toCurrency"></select>
+        </div>
+        <button id="convert" onclick="convertCurrency()">хөрвүүлэх</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        const exchangeArray = [
+            { name: 'USD', value: 1 },
+            { name: 'EUR', value: 0.88 },
+            { name: 'POUND', value: 0.75 },
+            { name: 'WON', value: 1433 },
+            { name: 'YEN', value: 142 },
+            { name: 'YAN', value: 7.31 },
+            { name: 'MNT', value: 3537 }
+        ];
+        const fromCurrency = document.getElementById('fromCurrency');
+        const toCurrency = document.getElementById('toCurrency');
+
+        exchangeArray.forEach(currency => {
+            const option1 = document.createElement('option');
+            option1.value = currency.value;
+            option1.text = currency.name;
+            fromCurrency.appendChild(option1);
+
+            const option2 = document.createElement('option');
+            option2.value = currency.value;
+            option2.text = currency.name;
+            toCurrency.appendChild(option2);
+
+        });
+
+        function appendNumber(num) {
+            document.getElementById('amount').value += num;
+        }
+
+        function back() {
+            let input = document.getElementById('amount');
+            input.value = input.value.slice(0, -1);
+        }
+          
+
+        function clearInput() {
+            document.getElementById('amount').value = '';
+        }
+
+        function convertCurrency() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            const fromValue = parseFloat(fromCurrency.value);
+            const toValue = parseFloat(toCurrency.value);
+            
+            const usdAmount = amount / fromValue;
+            const result = usdAmount * toValue; 
+
+            document.getElementById('amount').value = result;
+        }
+    </script>
+
+</body>
+
+</html>

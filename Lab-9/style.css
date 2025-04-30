@@ -88,7 +88,7 @@ input {
 }
 .keypad button:nth-child(13){
     width: 290px;
-    height: 30px;
+    height: 35px;
     border-radius: 8%;
     display: flex;
     justify-content: center;

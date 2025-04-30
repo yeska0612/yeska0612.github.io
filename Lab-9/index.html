@@ -76,7 +76,12 @@
         });
 
         function appendNumber(num) {
-            document.getElementById('amount').value += num;
+            const input = document.getElementById('amount');
+            const currentValue = input.value;
+            if (num === '.' && currentValue.includes('.')) {
+                return;
+            }
+            input.value += num;
         }
 
         function back() {

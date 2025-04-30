@@ -86,6 +86,14 @@ input {
 .keypad button:nth-child(12){
     background-color: #dd0009;
 }
+.keypad button:nth-child(13){
+    width: 290px;
+    height: 30px;
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .money{
     margin-bottom: 10px;

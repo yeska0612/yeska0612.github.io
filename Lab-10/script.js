@@ -117,7 +117,7 @@ function ehlehShineUg() {
         showAlert("Үгс ачаалагдаагүй байна.");
         return;
     }
-    
+
     wrongGuesses = 0;
     const random = words[Math.floor(Math.random() * words.length)];
     taahUg = random.word;
@@ -242,20 +242,17 @@ if (leaderboardBtn) {
 document.getElementById("show-leaderboard-over").addEventListener("click", showLeaderboard);
 
 document.getElementById("back-to-game").addEventListener("click", () => {
-    const nickname = getCookie("nickname");
-    if (nickname) {
-        document.getElementById("duussan-heseg").style.display = "none";
-        togloom_ehluuleh(null, nickname); // event биш, cookie ашиглана
-    } else {
-        window.location.reload();
-    }
+    document.getElementById("nickname").value = "";
+
+    document.getElementById("top-heseg").style.display = "none";
+    document.getElementById("start").style.display = "flex";
 });
 
 document.getElementById("dahin_togloh").addEventListener("click", () => {
     const nickname = getCookie("nickname");
     if (nickname) {
         document.getElementById("duussan-heseg").style.display = "none";
-        togloom_ehluuleh(null, nickname); // event биш, cookie ашиглана
+        togloom_ehluuleh(null, nickname);
     } else {
         window.location.reload();
     }

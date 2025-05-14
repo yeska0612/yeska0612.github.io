@@ -13,8 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
             words = data;
         })
         .catch((error) => {
-            console.error("JSON уншихад алдаа гарлаа:", error);
-            showAlert("Үгсийн мэдээллийг ачааллаж чадсангүй!");
+            console.error("JSON unshihad aldaa garlaa:", error);
+            showAlert("Ug unshij chadaagui!");
         });
 });
 
@@ -45,7 +45,6 @@ function togloom_ehluuleh(event, nicknameFromCookie = null) {
         nickname = nicknameFromCookie;
     } else {
         nickname = document.getElementById("nickname").value.trim();
-        if (!nickname) return showAlert("Нэрээ оруулна уу!");
         setCookie("nickname", nickname, 1);
     }
 
@@ -208,6 +207,7 @@ function saveToLeaderboard(nickname, score) {
 }
 
 function showLeaderboard() {
+    document.getElementById("start").style.display = "none";
     document.getElementById("undsen-heseg").style.display = "none";
     document.getElementById("duussan-heseg").style.display = "none";
     document.getElementById("top-heseg").classList.remove("hidden");

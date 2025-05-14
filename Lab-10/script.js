@@ -16,6 +16,17 @@ window.addEventListener("DOMContentLoaded", () => {
             console.error("JSON unshihad aldaa garlaa:", error);
             showAlert("Ug unshij chadaagui!");
         });
+
+
+    const startForm = document.querySelector("#start form");
+    startForm.addEventListener("submit", togloom_ehluuleh);
+
+    document.querySelectorAll('#show-leaderboard-over').forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            showLeaderboard();
+        });
+    });
 });
 
 
@@ -112,7 +123,7 @@ function taahUseg(letter, btn) {
 }
 
 function ehlehShineUg() {
-     if (!words || words.length === 0) {
+    if (!words || words.length === 0) {
         showAlert("Үгс ачаалагдаагүй байна.");
         return;
     }
